@@ -13,14 +13,24 @@ export default function App() {
                 studentId="23-51456-1" 
                 department="Computer Science & Engineering — AIUB" 
                 bio="Passionate about software engineering, quality assurance, and UI/UX design." 
+                skills={["React Native", "JavaScript", "Node.js", "PostgreSQL"]}
             />
 
-            {/* Second card — a classmate's data */}
+            {/* Second card — a classmate's data (same component, different props!) */}
             <ProfileCard 
                 name="Rakib Rahman" 
                 studentId="22-67890-2" 
                 department="Computer Science — AIUB" 
                 bio="Interested in AI and full-stack web development. Loves competitive programming." 
+                skills={["Python", "Machine Learning", "React", "Django"]}
+            />
+
+            {/* Third card — another classmate's data without skills, card will still work */}
+            <ProfileCard 
+                name="Saad Al Rafi" 
+                studentId="22-54321-3" 
+                department="Computer Science — AIUB" 
+                bio="Aspiring software engineer with a passion for mobile apps and UI/UX design." 
             />
         </ScrollView>
     );
